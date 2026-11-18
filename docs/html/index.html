@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Gestor de Domótica para Hogares: Gestor de Domótica para hogares - Proyecto Final ALSE</title>
+<title>Gestor de Domótica para Hogares: Gestor de Domótica para Hogares — Proyecto Final ALSE</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,19 +63,80 @@ $(function() {
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Gestor de Domótica para hogares - Proyecto Final ALSE </div>  </div>
+<div class="title">Gestor de Domótica para Hogares — Proyecto Final ALSE </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> Proyecto final desarrollado en C++, Qt5, SQLite y QtCharts para la gestión automatizada de dispositivos del hogar.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-Estructura</h1>
-<ul>
-<li><code>include/</code>: Cabeceras (.h) con POO, polimorfismo y base de datos.</li>
-<li><code>src/</code>: Implementaciones (.cpp), interfaz gráfica y <code>main</code>.</li>
-</ul>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> Aplicación de escritorio en <b>C++ con Qt5</b> para controlar dispositivos domóticos (luces, persianas y sensores). Permite registrar dispositivos, encenderlos y apagarlos desde una interfaz gráfica, validar su estado, ejecutar rutinas y estimar el consumo energético. Toda la información se guarda en una base de datos <b>SQLite</b>.</p>
+<p><b>Autores:</b> Samuel Jiménez, Brayan Villamil <b>Curso:</b> Algoritmos en Sistemas Electrónicos (ALSE) — 2026-2</p>
+<hr  />
 <h1><a class="anchor" id="autotoc_md2"></a>
-Compilación y Ejecución</h1>
-<p>```bash mkdir build &amp;&amp; cd build cmake .. make ./ProyectoFinal </p>
+Funcionalidades</h1>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Requerimientos funcionales</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">#   </th><th class="markdownTableHeadNone">Requerimiento   </th><th class="markdownTableHeadNone">Implementación    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Autenticación de usuarios   </td><td class="markdownTableBodyNone">Ventana de inicio de sesión (<code><a class="el" href="classLoginDialog.html">LoginDialog</a></code>). Valida contra la tabla <code>Usuarios</code>; las contraseñas se guardan cifradas con SHA-256. Máximo 3 intentos.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Registro de dispositivos   </td><td class="markdownTableBodyNone">Formulario con nombre, tipo (<a class="el" href="classLuz.html">Luz</a>, <a class="el" href="classPersiana.html">Persiana</a>, <a class="el" href="classSensor.html">Sensor</a>) y potencia. Valida campos vacíos, potencias inválidas y nombres repetidos. Los dispositivos se guardan en la BD y se cargan al iniciar.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Activación y desactivación desde la GUI   </td><td class="markdownTableBodyNone">Botones <b>Encender</b> y <b>Apagar</b> sobre el dispositivo seleccionado.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Validación de estados   </td><td class="markdownTableBodyNone">Estados <code>Encendido</code>, <code>Apagado</code> y <code>Fallo</code> (con colores verde, gris y rojo). Un dispositivo en fallo no puede encenderse hasta que se apague (reinicio). Botón <b>Simular Fallo</b> para probarlo.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Registro de eventos en la BD   </td><td class="markdownTableBodyNone">Cada acción se guarda en la tabla <code>Eventos</code> con fecha y hora, y se muestra en la pestaña <b>Historial de Eventos</b>.   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Requerimientos no funcionales</h2>
+<ul>
+<li><b>Interfaz amigable:</b> ventana organizada en pestañas (Dispositivos, Rutinas, Historial, Consumo y Gráficas) y mensajes de aviso claros.</li>
+<li><b>Código modular y documentado:</b> cabeceras en <code>include/</code>, implementación en <code>src/</code> y comentarios en formato Doxygen.</li>
+<li><b>Rutinas de dispositivos:</b><ul>
+<li><b>Modo Noche:</b> apaga luces y cierra persianas; los sensores siguen activos.</li>
+<li><b>Salir de Casa:</b> apaga todos los dispositivos.</li>
+<li><b>Buenos Días:</b> enciende las luces que no estén en fallo.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Adicionales</h2>
+<ul>
+<li><b>Estimación de consumo energético:</b> <code>consumo (kWh) = potencia (W) × horas de uso / 1000</code>. El usuario elige las horas; se muestra el consumo por dispositivo, el total estimado y el total de los dispositivos encendidos.</li>
+<li><b>Panel de control con gráficas:</b> gráfica de barras (QtCharts) con el consumo de cada dispositivo.</li>
+</ul>
+<hr  />
+<h1><a class="anchor" id="autotoc_md7"></a>
+Diseño orientado a objetos</h1>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Dispositivo  (clase abstracta)</h1>
+<p>┌────────────┼────────────┐ </p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+Luz        Persiana      Sensor</h1>
+<p>**<code><a class="el" href="classDispositivo.html">Dispositivo</a></code>** es una clase abstracta con métodos virtuales puros: <code>encender()</code>, <code>apagar()</code> y <code>getTipo()</code>, además del método virtual <code>getDetalle()</code>.</p><ul>
+<li><b>Polimorfismo:</b> cada clase derivada implementa esos métodos a su manera:<ul>
+<li><code><a class="el" href="classLuz.html">Luz</a></code>: al encender recupera su último brillo; al apagar el brillo pasa a 0 %.</li>
+<li><code><a class="el" href="classPersiana.html">Persiana</a></code>: "encender" la abre al 100 % y "apagar" la cierra.</li>
+<li><code><a class="el" href="classSensor.html">Sensor</a></code>: al encender toma una lectura (simulada); al apagar deja de medir.</li>
+</ul>
+</li>
+<li>**<code><a class="el" href="classGestorDomotica.html">GestorDomotica</a></code>** guarda todos los dispositivos en un <code>std::vector&lt;Dispositivo*&gt;</code> y los trata de forma uniforme a través de la clase base.</li>
+<li>**<code><a class="el" href="classBaseDatos.html">BaseDatos</a></code>** encapsula todo el acceso a SQLite usando sentencias preparadas, para evitar inyección SQL.</li>
+<li>**<code><a class="el" href="classMainWindow.html">MainWindow</a></code>** y **<code><a class="el" href="classLoginDialog.html">LoginDialog</a></code>** forman la interfaz gráfica.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md10"></a>
+Base de datos (&lt;tt&gt;domotica.db&lt;/tt&gt;)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Tabla   </th><th class="markdownTableHeadNone">Campos    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>Usuarios</code>   </td><td class="markdownTableBodyNone"><code>id</code>, <code>usuario</code>, <code>clave_hash</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>Dispositivos</code>   </td><td class="markdownTableBodyNone"><code>id</code>, <code>nombre</code>, <code>tipo</code>, <code>potencia_watts</code>, <code>estado</code>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>Eventos</code>   </td><td class="markdownTableBodyNone"><code>id</code>, <code>dispositivo</code>, <code>accion</code>, <code>fecha</code>   </td></tr>
+</table>
+<p>El archivo <code>domotica.db</code> se crea automáticamente junto al ejecutable (dentro de <code>build/</code>) la primera vez que se ejecuta el programa. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

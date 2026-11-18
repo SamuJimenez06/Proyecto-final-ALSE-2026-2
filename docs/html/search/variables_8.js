@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tipo_161',['tipo',['../structRegistroDispositivo.html#a980eca790fdc5148a738663819ed0a03',1,'RegistroDispositivo']]],
-  ['txtclave_162',['txtClave',['../classLoginDialog.html#a59fda685c4323d3a2120c57ed26d386d',1,'LoginDialog']]],
-  ['txtusuario_163',['txtUsuario',['../classLoginDialog.html#a1bd3563a393cb5d9bcba431085753bc5',1,'LoginDialog']]]
+  ['potencia_179',['potencia',['../structRegistroDispositivo.html#adc3aa1425ba2a30b3d7f33754f735848',1,'RegistroDispositivo']]],
+  ['potenciawatts_180',['potenciaWatts',['../classDispositivo.html#a57501298695e1f5784df1255722e84da',1,'Dispositivo']]]
 ];

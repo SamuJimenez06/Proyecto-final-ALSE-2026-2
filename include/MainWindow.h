@@ -1,3 +1,10 @@
+/**
+ * @file MainWindow.h
+ * @brief Ventana principal: dispositivos, rutinas, historial de eventos y consumo con gráficas.
+ * @author Samuel Jiménez, Brayan Villamil
+ * @date 2026-11
+ */
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -23,14 +30,9 @@ private slots:
     void on_btnApagar_clicked();
     void on_btnSimularFallo_clicked();
     void on_btnRegistrar_clicked();
-
-//Modos noche,salir de casa,dia
-
     void on_btnModoNoche_clicked();
     void on_btnSalirCasa_clicked();
     void on_btnBuenosDias_clicked();
-//Boton Para calcular el consumo 
-
     void on_btnCalcularConsumo_clicked();
 
 private:

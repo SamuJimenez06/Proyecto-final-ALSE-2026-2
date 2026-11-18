@@ -7,5 +7,6 @@ var searchData=
   ['actualizartablaeventos_4',['actualizarTablaEventos',['../classMainWindow.html#ac5f0f8204074db7a24e4c99078c9cc4b',1,'MainWindow']]],
   ['agregardispositivo_5',['agregarDispositivo',['../classGestorDomotica.html#a7c903cd793bfbbdd5405929ab1d39be1',1,'GestorDomotica']]],
   ['apagado_6',['Apagado',['../Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49a460797720d3646af77e673691226c12c',1,'Dispositivo.h']]],
-  ['apagar_7',['apagar',['../classDispositivo.html#aab817b444b260ababfa55f4e77fb7e46',1,'Dispositivo::apagar()'],['../classLuz.html#a6698cbc4edb8f74487d14e83414dbdef',1,'Luz::apagar()'],['../classPersiana.html#aeb83e94b400e012987dfc42d44ca9538',1,'Persiana::apagar()'],['../classSensor.html#ae4d5c72c1e82a9e6a926f18a9636a8dc',1,'Sensor::apagar()']]]
+  ['apagar_7',['apagar',['../classDispositivo.html#aab817b444b260ababfa55f4e77fb7e46',1,'Dispositivo::apagar()'],['../classLuz.html#a6698cbc4edb8f74487d14e83414dbdef',1,'Luz::apagar()'],['../classPersiana.html#aeb83e94b400e012987dfc42d44ca9538',1,'Persiana::apagar()'],['../classSensor.html#ae4d5c72c1e82a9e6a926f18a9636a8dc',1,'Sensor::apagar()']]],
+  ['apertura_8',['apertura',['../classPersiana.html#a705f70a5e61268797a4819d5aaa493fd',1,'Persiana']]]
 ];

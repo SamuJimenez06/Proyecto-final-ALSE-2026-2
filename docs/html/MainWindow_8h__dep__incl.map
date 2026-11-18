@@ -1,5 +1,5 @@
 <map id="include/MainWindow.h" name="include/MainWindow.h">
-<area shape="rect" id="node1" title=" " alt="" coords="50,5,218,32"/>
+<area shape="rect" id="node1" title="Ventana principal: dispositivos, rutinas, historial de eventos y consumo con gráficas." alt="" coords="50,5,218,32"/>
 <area shape="rect" id="node2" href="$main_8cpp.html" title="Punto de entrada: muestra primero el inicio de sesión y, si es correcto, la ventana principal." alt="" coords="5,80,111,107"/>
 <area shape="rect" id="node3" href="$MainWindow_8cpp.html" title="Implementación de la lógica de la ventana principal, eventos, rutinas y gráficas." alt="" coords="134,80,289,107"/>
 </map>

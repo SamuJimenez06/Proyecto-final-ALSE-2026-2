@@ -71,16 +71,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Maneja la conexión con SQLite y todas las consultas del sistema.  
- <a href="classBaseDatos.html#details">Más...</a></p>
-
 <p><code>#include &lt;<a class="el" href="BaseDatos_8h_source.html">BaseDatos.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de colaboración para BaseDatos:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBaseDatos__coll__graph.png" border="0" usemap="#aBaseDatos_coll__map" alt="Collaboration graph"/></div>
 <map name="aBaseDatos_coll__map" id="aBaseDatos_coll__map">
-<area shape="rect" title="Maneja la conexión con SQLite y todas las consultas del sistema." alt="" coords="5,5,176,229"/>
+<area shape="rect" title=" " alt="" coords="5,5,176,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -93,39 +90,28 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:ab345721442907a655c76692fb10dbacb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#ab345721442907a655c76692fb10dbacb">abrirConexion</a> ()</td></tr>
 <tr class="separator:ab345721442907a655c76692fb10dbacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b05593d77ec99e3e1fda3d55a7183da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#a5b05593d77ec99e3e1fda3d55a7183da">inicializarTablas</a> ()</td></tr>
-<tr class="memdesc:a5b05593d77ec99e3e1fda3d55a7183da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea las tablas Dispositivos, Eventos y Usuarios si no existen, y el usuario admin.  <a href="classBaseDatos.html#a5b05593d77ec99e3e1fda3d55a7183da">Más...</a><br /></td></tr>
 <tr class="separator:a5b05593d77ec99e3e1fda3d55a7183da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fe668abf03edca371b83b6558ce92ad"><td class="memItemLeft" align="right" valign="top">sqlite3 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#a9fe668abf03edca371b83b6558ce92ad">getConexion</a> () const</td></tr>
-<tr class="memdesc:a9fe668abf03edca371b83b6558ce92ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve la conexión para hacer consultas directas (ej. historial).  <a href="classBaseDatos.html#a9fe668abf03edca371b83b6558ce92ad">Más...</a><br /></td></tr>
 <tr class="separator:a9fe668abf03edca371b83b6558ce92ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0242539341f740f091793894cd3edd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#af0242539341f740f091793894cd3edd3">validarUsuario</a> (const std::string &amp;usuario, const std::string &amp;clave)</td></tr>
-<tr class="memdesc:af0242539341f740f091793894cd3edd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica usuario y contraseña contra la tabla Usuarios (login).  <a href="classBaseDatos.html#af0242539341f740f091793894cd3edd3">Más...</a><br /></td></tr>
 <tr class="separator:af0242539341f740f091793894cd3edd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06312a579bfdf2b913b4502d7da3147b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#a06312a579bfdf2b913b4502d7da3147b">guardarDispositivo</a> (const std::string &amp;nombre, const std::string &amp;tipo, double potencia)</td></tr>
-<tr class="memdesc:a06312a579bfdf2b913b4502d7da3147b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guarda un dispositivo nuevo.  <a href="classBaseDatos.html#a06312a579bfdf2b913b4502d7da3147b">Más...</a><br /></td></tr>
 <tr class="separator:a06312a579bfdf2b913b4502d7da3147b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20e68da69c6d1ee8b18b2535cbe14447"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structRegistroDispositivo.html">RegistroDispositivo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#a20e68da69c6d1ee8b18b2535cbe14447">cargarDispositivos</a> ()</td></tr>
-<tr class="memdesc:a20e68da69c6d1ee8b18b2535cbe14447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee todos los dispositivos guardados (se usa al abrir el programa).  <a href="classBaseDatos.html#a20e68da69c6d1ee8b18b2535cbe14447">Más...</a><br /></td></tr>
 <tr class="separator:a20e68da69c6d1ee8b18b2535cbe14447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96e4e31eb3d5fbb6dab6a0e2693dbfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#ae96e4e31eb3d5fbb6dab6a0e2693dbfd">actualizarEstado</a> (const std::string &amp;nombre, const std::string &amp;estado)</td></tr>
-<tr class="memdesc:ae96e4e31eb3d5fbb6dab6a0e2693dbfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guarda el nuevo estado (Encendido/Apagado/Fallo) de un dispositivo.  <a href="classBaseDatos.html#ae96e4e31eb3d5fbb6dab6a0e2693dbfd">Más...</a><br /></td></tr>
 <tr class="separator:ae96e4e31eb3d5fbb6dab6a0e2693dbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2176e82ffa3c4f1540d6bac30ea260e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#a2176e82ffa3c4f1540d6bac30ea260e7">existeDispositivo</a> (const std::string &amp;nombre)</td></tr>
-<tr class="memdesc:a2176e82ffa3c4f1540d6bac30ea260e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si ya existe un dispositivo con ese nombre (evita repetidos).  <a href="classBaseDatos.html#a2176e82ffa3c4f1540d6bac30ea260e7">Más...</a><br /></td></tr>
 <tr class="separator:a2176e82ffa3c4f1540d6bac30ea260e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f6dfc56e39b50922f1ac406f07981ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#a4f6dfc56e39b50922f1ac406f07981ab">registrarEvento</a> (const std::string &amp;dispositivo, const std::string &amp;accion)</td></tr>
-<tr class="memdesc:a4f6dfc56e39b50922f1ac406f07981ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registra una acción en la tabla Eventos con fecha y hora.  <a href="classBaseDatos.html#a4f6dfc56e39b50922f1ac406f07981ab">Más...</a><br /></td></tr>
 <tr class="separator:a4f6dfc56e39b50922f1ac406f07981ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atributos privados</h2></td></tr>
 <tr class="memitem:a181a00b7a97416ccc530d94c9cd12416"><td class="memItemLeft" align="right" valign="top">sqlite3 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseDatos.html#a181a00b7a97416ccc530d94c9cd12416">db</a></td></tr>
-<tr class="memdesc:a181a00b7a97416ccc530d94c9cd12416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conexión a la base de datos.  <a href="classBaseDatos.html#a181a00b7a97416ccc530d94c9cd12416">Más...</a><br /></td></tr>
 <tr class="separator:a181a00b7a97416ccc530d94c9cd12416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock"><p>Maneja la conexión con SQLite y todas las consultas del sistema. </p>
-</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="a6881ebc856bc9b2794c950c78af27e46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6881ebc856bc9b2794c950c78af27e46">&#9670;&nbsp;</a></span>BaseDatos()</h2>
 
@@ -204,8 +190,6 @@ Atributos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Guarda el nuevo estado (Encendido/Apagado/Fallo) de un dispositivo. </p>
-
 </div>
 </div>
 <a id="a20e68da69c6d1ee8b18b2535cbe14447"></a>
@@ -222,8 +206,6 @@ Atributos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Lee todos los dispositivos guardados (se usa al abrir el programa). </p>
 
 </div>
 </div>
@@ -242,8 +224,6 @@ Atributos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Indica si ya existe un dispositivo con ese nombre (evita repetidos). </p>
 
 </div>
 </div>
@@ -269,8 +249,6 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Devuelve la conexión para hacer consultas directas (ej. historial). </p>
 
 </div>
 </div>
@@ -306,8 +284,6 @@ Atributos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Guarda un dispositivo nuevo. </p>
-
 </div>
 </div>
 <a id="a5b05593d77ec99e3e1fda3d55a7183da"></a>
@@ -324,8 +300,6 @@ Atributos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Crea las tablas Dispositivos, Eventos y Usuarios si no existen, y el usuario admin. </p>
 
 </div>
 </div>
@@ -355,8 +329,6 @@ Atributos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Registra una acción en la tabla Eventos con fecha y hora. </p>
-
 </div>
 </div>
 <a id="af0242539341f740f091793894cd3edd3"></a>
@@ -385,8 +357,6 @@ Atributos privados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verifica usuario y contraseña contra la tabla Usuarios (login). </p>
-
 </div>
 </div>
 <h2 class="groupheader">Documentación de los datos miembro</h2>
@@ -409,8 +379,6 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Conexión a la base de datos. </p>
 
 </div>
 </div>

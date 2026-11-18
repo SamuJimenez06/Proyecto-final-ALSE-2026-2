@@ -1,5 +1,5 @@
 <map id="include/Persiana.h" name="include/Persiana.h">
-<area shape="rect" id="node1" title="Clase derivada que modela una persiana domótica." alt="" coords="5,5,147,32"/>
-<area shape="rect" id="node2" href="$Dispositivo_8h.html" title="Definición de la clase base abstracta Dispositivo y el enumerador de Estados." alt="" coords="23,80,129,107"/>
+<area shape="rect" id="node1" title="Clase derivada que modela una persiana motorizada." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node2" href="$Dispositivo_8h.html" title="Definición de la clase base abstracta Dispositivo y del enumerador Estado." alt="" coords="23,80,129,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="47,155,105,181"/>
 </map>

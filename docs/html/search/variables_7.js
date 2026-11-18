@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['potencia_159',['potencia',['../structRegistroDispositivo.html#adc3aa1425ba2a30b3d7f33754f735848',1,'RegistroDispositivo']]],
-  ['potenciawatts_160',['potenciaWatts',['../classDispositivo.html#a57501298695e1f5784df1255722e84da',1,'Dispositivo']]]
+  ['nombre_178',['nombre',['../structRegistroDispositivo.html#a78a9186df9e92f36398c7e55962ca972',1,'RegistroDispositivo::nombre()'],['../classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2',1,'Dispositivo::nombre()']]]
 ];

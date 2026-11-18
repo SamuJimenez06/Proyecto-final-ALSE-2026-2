@@ -1,7 +1,8 @@
 /**
  * @file LoginDialog.h
  * @brief Ventana de inicio de sesión para el sistema domótico.
- *        Valida usuario y contraseña contra la tabla Usuarios de la base de datos.
+ * @author Samuel Jiménez, Brayan Villamil
+ * @date 2026-11
  */
 
 #ifndef LOGIN_DIALOG_H
@@ -17,15 +18,14 @@
 class LoginDialog : public QDialog {
     Q_OBJECT
 private:
-    BaseDatos& bd;          ///< Base de datos donde están los usuarios
+    BaseDatos& bd;
     QLineEdit *txtUsuario;
     QLineEdit *txtClave;
     QPushButton *btnIngresar;
-    QLabel *lblMensaje;     ///< Muestra el error si las credenciales son incorrectas
-    int intentos;           ///< Intentos fallidos
+    QLabel *lblMensaje;
+    int intentos;
 
 private slots:
-    /// Compara usuario y contraseña con la base de datos.
     void verificarCredenciales() {
         QString usuario = txtUsuario->text().trimmed();
         QString clave = txtClave->text();
@@ -36,14 +36,14 @@ private slots:
         }
 
         if (bd.validarUsuario(usuario.toStdString(), clave.toStdString())) {
-            accept();   // cierra el diálogo con resultado "Accepted"
+            accept();
         } else {
             intentos++;
             lblMensaje->setText(QString("Usuario o contraseña incorrectos (intento %1 de 3).").arg(intentos));
             txtClave->clear();
             txtClave->setFocus();
             if (intentos >= 3) {
-                reject();   // demasiados intentos: se cierra el programa
+                reject();
             }
         }
     }

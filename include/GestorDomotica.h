@@ -1,6 +1,8 @@
 /**
  * @file GestorDomotica.h
  * @brief Administrador de la colección en memoria de dispositivos domóticos.
+ * @author Samuel Jiménez, Brayan Villamil
+ * @date 2026-11
  */
 
 #ifndef GESTOR_DOMOTICA_H

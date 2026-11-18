@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['estado_153',['estado',['../structRegistroDispositivo.html#a79cde69502227f011206d733bff79097',1,'RegistroDispositivo::estado()'],['../classDispositivo.html#a06e3fecd8ab39a8735b9f455231aef7d',1,'Dispositivo::estado()']]]
+  ['db_171',['db',['../classBaseDatos.html#a181a00b7a97416ccc530d94c9cd12416',1,'BaseDatos']]],
+  ['dispositivos_172',['dispositivos',['../classGestorDomotica.html#a652408f8d9ebb241a54d35105831fd3f',1,'GestorDomotica']]]
 ];

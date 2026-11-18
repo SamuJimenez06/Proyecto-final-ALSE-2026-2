@@ -2,8 +2,8 @@
 <area shape="rect" id="node1" title="Punto de entrada: muestra primero el inicio de sesión y, si es correcto, la ventana principal." alt="" coords="416,5,521,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="233,80,339,107"/>
 <area shape="rect" id="node3" href="$BaseDatos_8h.html" title="Acceso a la base de datos SQLite: usuarios, dispositivos y registro de eventos." alt="" coords="570,155,674,181"/>
-<area shape="rect" id="node7" href="$LoginDialog_8h.html" title="Ventana de inicio de sesión para el sistema domótico. Valida usuario y contraseña contra la tabla Usu..." alt="" coords="363,80,473,107"/>
-<area shape="rect" id="node13" href="$MainWindow_8h.html" title=" " alt="" coords="615,80,733,107"/>
+<area shape="rect" id="node7" href="$LoginDialog_8h.html" title="Ventana de inicio de sesión para el sistema domótico." alt="" coords="363,80,473,107"/>
+<area shape="rect" id="node13" href="$MainWindow_8h.html" title="Ventana principal: dispositivos, rutinas, historial de eventos y consumo con gráficas." alt="" coords="615,80,733,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="583,229,661,256"/>
 <area shape="rect" id="node5" title=" " alt="" coords="774,304,833,331"/>
 <area shape="rect" id="node6" title=" " alt="" coords="760,229,823,256"/>
@@ -14,5 +14,5 @@
 <area shape="rect" id="node12" title=" " alt="" coords="381,155,447,181"/>
 <area shape="rect" id="node14" title=" " alt="" coords="699,155,815,181"/>
 <area shape="rect" id="node15" href="$GestorDomotica_8h.html" title="Administrador de la colección en memoria de dispositivos domóticos." alt="" coords="839,155,979,181"/>
-<area shape="rect" id="node16" href="$Dispositivo_8h.html" title="Definición de la clase base abstracta Dispositivo y el enumerador de Estados." alt="" coords="851,229,958,256"/>
+<area shape="rect" id="node16" href="$Dispositivo_8h.html" title="Definición de la clase base abstracta Dispositivo y del enumerador Estado." alt="" coords="851,229,958,256"/>
 </map>

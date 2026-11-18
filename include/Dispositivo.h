@@ -1,7 +1,7 @@
 /**
  * @file Dispositivo.h
- * @brief Definición de la clase base abstracta Dispositivo y el enumerador de Estados.
- * @author Samuel Jiménez,Brayan Villamil
+ * @brief Definición de la clase base abstracta Dispositivo y del enumerador Estado.
+ * @author Samuel Jiménez, Brayan Villamil
  * @date 2026-11
  */
 
@@ -10,15 +10,12 @@
 
 #include <string>
 
-/**
- * @enum Estado
- * @brief Representa los estados operativos posibles de un dispositivo.
- */
-enum class Estado { Encendido, Apagado, Fallo };
+enum class Estado {
+    Encendido,
+    Apagado,
+    Fallo
+};
 
-/**
- * @class Dispositivo
- */
 class Dispositivo {
 protected:
     int id;
@@ -35,6 +32,7 @@ public:
     virtual void encender() = 0;
     virtual void apagar() = 0;
     virtual std::string getTipo() const = 0;
+    virtual std::string getDetalle() const { return ""; }
 
     Estado getEstado() const { return estado; }
     void setEstado(Estado e) { estado = e; }

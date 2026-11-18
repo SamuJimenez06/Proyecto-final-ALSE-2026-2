@@ -1,6 +1,8 @@
 /**
  * @file MainWindow.cpp
  * @brief Implementación de la lógica de la ventana principal, eventos, rutinas y gráficas.
+ * @author Samuel Jiménez, Brayan Villamil
+ * @date 2026-11
  */
 
 #include "MainWindow.h"
@@ -81,7 +83,9 @@ void MainWindow::actualizarListaDispositivos() {
             colorItem = QColor(200, 0, 0);
         }
 
-        QString texto = QString::fromStdString(d->getNombre() + " [" + d->getTipo() + "] - " + estadoStr.toStdString() + " - " + std::to_string((int)d->getPotencia()) + " W");
+        std::string detalle = d->getDetalle();
+        QString texto = QString::fromStdString(d->getNombre() + " [" + d->getTipo() + "] - " + estadoStr.toStdString() + " - " + std::to_string((int)d->getPotencia()) + " W"
+                                               + (detalle.empty() ? "" : " - " + detalle));
         QListWidgetItem* item = new QListWidgetItem(texto);
         item->setForeground(colorItem);
         ui->listWidgetDispositivos->addItem(item);

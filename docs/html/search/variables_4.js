@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['id_155',['id',['../classDispositivo.html#a9ed6e1aa610907334a553ca041801494',1,'Dispositivo']]],
-  ['intentos_156',['intentos',['../classLoginDialog.html#a5adaddd1bda60037e477cdab3cf2e107',1,'LoginDialog']]]
+  ['gestor_174',['gestor',['../classMainWindow.html#acb7807a17fc861c0f9674d58102d82f3',1,'MainWindow']]]
 ];
