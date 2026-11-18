@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Domótica - Proyecto Final ALSE</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>720</width>
+      <height>460</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    
+    <!-- PESTAÑA 1: DISPOSITIVOS -->
+    <widget class="QWidget" name="tabDispositivos">
+     <attribute name="title"><string>Dispositivos</string></attribute>
+     <widget class="QListWidget" name="listWidgetDispositivos">
+      <property name="geometry"><rect><x>20</x><y>20</y><width>380</width><height>380</height></rect></property>
+     </widget>
+     <widget class="QPushButton" name="btnEncender">
+      <property name="geometry"><rect><x>420</x><y>20</y><width>130</width><height>35</height></rect></property>
+      <property name="text"><string>Encender</string></property>
+     </widget>
+     <widget class="QPushButton" name="btnApagar">
+      <property name="geometry"><rect><x>560</x><y>20</y><width>130</width><height>35</height></rect></property>
+      <property name="text"><string>Apagar</string></property>
+     </widget>
+     <widget class="QPushButton" name="btnSimularFallo">
+      <property name="geometry"><rect><x>420</x><y>70</y><width>270</width><height>35</height></rect></property>
+      <property name="text"><string>Simular Fallo</string></property>
+     </widget>
+     <widget class="QLineEdit" name="txtNombre">
+      <property name="geometry"><rect><x>420</x><y>140</y><width>270</width><height>30</height></rect></property>
+      <property name="placeholderText"><string>Nombre del dispositivo</string></property>
+     </widget>
+     <widget class="QComboBox" name="comboTipo">
+      <property name="geometry"><rect><x>420</x><y>190</y><width>270</width><height>30</height></rect></property>
+      <item><property name="text"><string>Luz</string></property></item>
+      <item><property name="text"><string>Persiana</string></property></item>
+      <item><property name="text"><string>Sensor</string></property></item>
+     </widget>
+     <widget class="QLineEdit" name="txtPotencia">
+      <property name="geometry"><rect><x>420</x><y>240</y><width>270</width><height>30</height></rect></property>
+      <property name="placeholderText"><string>Potencia en Watts (ej. 15.0)</string></property>
+     </widget>
+     <widget class="QPushButton" name="btnRegistrar">
+      <property name="geometry"><rect><x>420</x><y>290</y><width>270</width><height>40</height></rect></property>
+      <property name="text"><string>Registrar Dispositivo</string></property>
+     </widget>
+    </widget>
+
+    <!-- PESTAÑA 2: RUTINAS -->
+    <widget class="QWidget" name="tabRutinas">
+     <attribute name="title"><string>Rutinas</string></attribute>
+     <widget class="QPushButton" name="btnModoNoche">
+      <property name="geometry"><rect><x>150</x><y>80</y><width>400</width><height>50</height></rect></property>
+      <property name="text"><string>Modo Noche (Apagar luces y persianas)</string></property>
+     </widget>
+     <widget class="QPushButton" name="btnSalirCasa">
+      <property name="geometry"><rect><x>150</x><y>160</y><width>400</width><height>50</height></rect></property>
+      <property name="text"><string>Salir de Casa (Apagar todo)</string></property>
+     </widget>
+     <widget class="QPushButton" name="btnBuenosDias">
+      <property name="geometry"><rect><x>150</x><y>240</y><width>400</width><height>50</height></rect></property>
+      <property name="text"><string>Buenos Días (Encender luces)</string></property>
+     </widget>
+    </widget>
+
+    <!-- PESTAÑA 3: HISTORIAL DE EVENTOS -->
+    <widget class="QWidget" name="tabHistorial">
+     <attribute name="title"><string>Historial de Eventos</string></attribute>
+     <widget class="QTableWidget" name="tableWidgetEventos">
+      <property name="geometry"><rect><x>20</x><y>20</y><width>670</width><height>380</height></rect></property>
+      <column><property name="text"><string>Dispositivo</string></property></column>
+      <column><property name="text"><string>Acción</string></property></column>
+      <column><property name="text"><string>Fecha / Hora</string></property></column>
+     </widget>
+    </widget>
+
+    <!-- PESTAÑA 4: CONSUMO Y GRÁFICAS -->
+    <widget class="QWidget" name="tabConsumo">
+     <attribute name="title"><string>Consumo y Gráficas</string></attribute>
+     <widget class="QLineEdit" name="txtHorasUso">
+      <property name="geometry"><rect><x>20</x><y>20</y><width>160</width><height>30</height></rect></property>
+      <property name="placeholderText"><string>Horas de uso (ej. 5.0)</string></property>
+     </widget>
+     <widget class="QPushButton" name="btnCalcularConsumo">
+      <property name="geometry"><rect><x>190</x><y>20</y><width>110</width><height>30</height></rect></property>
+      <property name="text"><string>Calcular kWh</string></property>
+     </widget>
+     <widget class="QTextEdit" name="txtConsumoTexto">
+      <property name="geometry"><rect><x>20</x><y>70</y><width>280</width><height>330</height></rect></property>
+      <property name="readOnly"><bool>true</bool></property>
+     </widget>
+     <widget class="QWidget" name="layoutGrafica" native="true">
+      <property name="geometry"><rect><x>310</x><y>20</y><width>380</width><height>380</height></rect></property>
+     </widget>
+    </widget>
+
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry"><rect><x>0</x><y>0</y><width>750</width><height>22</height></rect></property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

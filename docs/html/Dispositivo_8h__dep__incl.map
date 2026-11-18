@@ -1,0 +1,10 @@
+<map id="include/Dispositivo.h" name="include/Dispositivo.h">
+<area shape="rect" id="node1" title="Definición de la clase base abstracta Dispositivo y el enumerador de Estados." alt="" coords="210,5,369,32"/>
+<area shape="rect" id="node2" href="$GestorDomotica_8h.html" title="Administrador de la colección en memoria de dispositivos domóticos." alt="" coords="22,80,213,107"/>
+<area shape="rect" id="node6" href="$Luz_8h.html" title="Clase derivada que modela una luz domótica." alt="" coords="197,155,304,181"/>
+<area shape="rect" id="node7" href="$Persiana_8h.html" title="Clase derivada que modela una persiana domótica." alt="" coords="328,155,469,181"/>
+<area shape="rect" id="node8" href="$Sensor_8h.html" title="Clase derivada que modela un sensor domótico." alt="" coords="428,80,556,107"/>
+<area shape="rect" id="node3" href="$MainWindow_8h.html" title=" " alt="" coords="5,155,173,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="Punto de entrada: muestra primero el inicio de sesión y, si es correcto, la ventana principal." alt="" coords="37,229,142,256"/>
+<area shape="rect" id="node5" href="$MainWindow_8cpp.html" title="Implementación de la lógica de la ventana principal, eventos, rutinas y gráficas." alt="" coords="247,229,401,256"/>
+</map>

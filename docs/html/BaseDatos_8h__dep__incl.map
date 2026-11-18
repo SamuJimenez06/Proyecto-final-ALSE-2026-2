@@ -1,0 +1,8 @@
+<map id="include/BaseDatos.h" name="include/BaseDatos.h">
+<area shape="rect" id="node1" title="Acceso a la base de datos SQLite: usuarios, dispositivos y registro de eventos." alt="" coords="188,5,343,32"/>
+<area shape="rect" id="node2" href="$LoginDialog_8h.html" title="Ventana de inicio de sesión para el sistema domótico. Valida usuario y contraseña contra la tabla Usu..." alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Punto de entrada: muestra primero el inicio de sesión y, si es correcto, la ventana principal." alt="" coords="137,155,242,181"/>
+<area shape="rect" id="node4" href="$MainWindow_8h.html" title=" " alt="" coords="243,80,411,107"/>
+<area shape="rect" id="node6" href="$BaseDatos_8cpp.html" title="Implementación del acceso a SQLite: usuarios, dispositivos y registro de eventos." alt="" coords="435,80,578,107"/>
+<area shape="rect" id="node5" href="$MainWindow_8cpp.html" title="Implementación de la lógica de la ventana principal, eventos, rutinas y gráficas." alt="" coords="265,155,420,181"/>
+</map>

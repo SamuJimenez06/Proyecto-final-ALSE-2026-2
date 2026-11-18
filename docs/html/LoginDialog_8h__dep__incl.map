@@ -1,0 +1,4 @@
+<map id="include/LoginDialog.h" name="include/LoginDialog.h">
+<area shape="rect" id="node1" title="Ventana de inicio de sesión para el sistema domótico. Valida usuario y contraseña contra la tabla Usu..." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title="Punto de entrada: muestra primero el inicio de sesión y, si es correcto, la ventana principal." alt="" coords="34,80,139,107"/>
+</map>

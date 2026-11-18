@@ -1,0 +1,10 @@
+<map id="include/MainWindow.h" name="include/MainWindow.h">
+<area shape="rect" id="node1" title=" " alt="" coords="131,5,299,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,121,107"/>
+<area shape="rect" id="node3" href="$GestorDomotica_8h.html" title="Administrador de la colección en memoria de dispositivos domóticos." alt="" coords="145,80,285,107"/>
+<area shape="rect" id="node7" href="$BaseDatos_8h.html" title="Acceso a la base de datos SQLite: usuarios, dispositivos y registro de eventos." alt="" coords="310,80,414,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="261,155,324,181"/>
+<area shape="rect" id="node5" href="$Dispositivo_8h.html" title="Definición de la clase base abstracta Dispositivo y el enumerador de Estados." alt="" coords="130,155,237,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="243,229,302,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="400,155,479,181"/>
+</map>

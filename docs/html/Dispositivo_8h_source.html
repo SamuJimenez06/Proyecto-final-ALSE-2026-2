@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gestor de Domótica para Hogares: Fichero Fuente include/Dispositivo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Gestor de Domótica para Hogares
+   </div>
+   <div id="projectbrief">Proyecto final ALSE</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Dispositivo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Dispositivo_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef DISPOSITIVO_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DISPOSITIVO_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">   17</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Estado</a> { <a class="code" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49a19ecf9ac55cd009d6fe6fee01d4ed33b">Encendido</a>, <a class="code" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49a460797720d3646af77e673691226c12c">Apagado</a>, <a class="code" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49af215802f06094cf00718ad119f279a6b">Fallo</a> };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classDispositivo.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDispositivo.html">Dispositivo</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classDispositivo.html#a9ed6e1aa610907334a553ca041801494">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDispositivo.html#a9ed6e1aa610907334a553ca041801494">id</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">   25</a></span>&#160;    std::string <a class="code" href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">nombre</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classDispositivo.html#a57501298695e1f5784df1255722e84da">   26</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classDispositivo.html#a57501298695e1f5784df1255722e84da">potenciaWatts</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classDispositivo.html#a06e3fecd8ab39a8735b9f455231aef7d">   27</a></span>&#160;    <a class="code" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Estado</a> <a class="code" href="classDispositivo.html#a06e3fecd8ab39a8735b9f455231aef7d">estado</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classDispositivo.html#a365b30c0dc2a0c4373a40fdf2ffade22">   30</a></span>&#160;    <a class="code" href="classDispositivo.html#a365b30c0dc2a0c4373a40fdf2ffade22">Dispositivo</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, std::string <a class="code" href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">nombre</a>, <span class="keywordtype">double</span> potencia)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        : <a class="code" href="classDispositivo.html#a9ed6e1aa610907334a553ca041801494">id</a>(<a class="code" href="classDispositivo.html#a9ed6e1aa610907334a553ca041801494">id</a>), <a class="code" href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">nombre</a>(<a class="code" href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">nombre</a>), <a class="code" href="classDispositivo.html#a57501298695e1f5784df1255722e84da">potenciaWatts</a>(potencia), <a class="code" href="classDispositivo.html#a06e3fecd8ab39a8735b9f455231aef7d">estado</a>(<a class="code" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Estado</a>::<a class="code" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49a460797720d3646af77e673691226c12c">Apagado</a>) {}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classDispositivo.html#ab8ac8f0267b52b1bcef708583173e5a1">   33</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classDispositivo.html#ab8ac8f0267b52b1bcef708583173e5a1">~Dispositivo</a>() {}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classDispositivo.html#a7bfd976c28c146964bc02b8dfaaa8ff8">   35</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDispositivo.html#a7bfd976c28c146964bc02b8dfaaa8ff8">encender</a>() = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classDispositivo.html#aab817b444b260ababfa55f4e77fb7e46">   36</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classDispositivo.html#aab817b444b260ababfa55f4e77fb7e46">apagar</a>() = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classDispositivo.html#a8140c9b0b9af646ec6201cf9b782a727">   37</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classDispositivo.html#a8140c9b0b9af646ec6201cf9b782a727">getTipo</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classDispositivo.html#aa89ac1526aca6caf819c332b32c3b63c">   39</a></span>&#160;    <a class="code" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Estado</a> <a class="code" href="classDispositivo.html#aa89ac1526aca6caf819c332b32c3b63c">getEstado</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classDispositivo.html#a06e3fecd8ab39a8735b9f455231aef7d">estado</a>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classDispositivo.html#a13eb7d5418d43dce550746a12a1c3641">   40</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDispositivo.html#a13eb7d5418d43dce550746a12a1c3641">setEstado</a>(<a class="code" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Estado</a> e) { <a class="code" href="classDispositivo.html#a06e3fecd8ab39a8735b9f455231aef7d">estado</a> = e; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classDispositivo.html#aef822b39538e62f54064f5bfc875fa42">   41</a></span>&#160;    std::string <a class="code" href="classDispositivo.html#aef822b39538e62f54064f5bfc875fa42">getNombre</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">nombre</a>; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classDispositivo.html#adcb5449c96590bd3cf82462716c20827">   42</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classDispositivo.html#adcb5449c96590bd3cf82462716c20827">getPotencia</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classDispositivo.html#a57501298695e1f5784df1255722e84da">potenciaWatts</a>; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classDispositivo.html#a4d470c1481fd167db94e6be4f08a259c">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDispositivo.html#a4d470c1481fd167db94e6be4f08a259c">getId</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classDispositivo.html#a9ed6e1aa610907334a553ca041801494">id</a>; }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aDispositivo_8h_html_a9d4630b1e0c310d9b8c562abd8114c49"><div class="ttname"><a href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Estado</a></div><div class="ttdeci">Estado</div><div class="ttdoc">Representa los estados operativos posibles de un dispositivo.</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:17</div></div>
+<div class="ttc" id="aDispositivo_8h_html_a9d4630b1e0c310d9b8c562abd8114c49a19ecf9ac55cd009d6fe6fee01d4ed33b"><div class="ttname"><a href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49a19ecf9ac55cd009d6fe6fee01d4ed33b">Estado::Encendido</a></div><div class="ttdeci">@ Encendido</div></div>
+<div class="ttc" id="aDispositivo_8h_html_a9d4630b1e0c310d9b8c562abd8114c49a460797720d3646af77e673691226c12c"><div class="ttname"><a href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49a460797720d3646af77e673691226c12c">Estado::Apagado</a></div><div class="ttdeci">@ Apagado</div></div>
+<div class="ttc" id="aDispositivo_8h_html_a9d4630b1e0c310d9b8c562abd8114c49af215802f06094cf00718ad119f279a6b"><div class="ttname"><a href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49af215802f06094cf00718ad119f279a6b">Estado::Fallo</a></div><div class="ttdeci">@ Fallo</div></div>
+<div class="ttc" id="aclassDispositivo_html"><div class="ttname"><a href="classDispositivo.html">Dispositivo</a></div><div class="ttdef"><b>Definition:</b> Dispositivo.h:22</div></div>
+<div class="ttc" id="aclassDispositivo_html_a06e3fecd8ab39a8735b9f455231aef7d"><div class="ttname"><a href="classDispositivo.html#a06e3fecd8ab39a8735b9f455231aef7d">Dispositivo::estado</a></div><div class="ttdeci">Estado estado</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:27</div></div>
+<div class="ttc" id="aclassDispositivo_html_a13eb7d5418d43dce550746a12a1c3641"><div class="ttname"><a href="classDispositivo.html#a13eb7d5418d43dce550746a12a1c3641">Dispositivo::setEstado</a></div><div class="ttdeci">void setEstado(Estado e)</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:40</div></div>
+<div class="ttc" id="aclassDispositivo_html_a365b30c0dc2a0c4373a40fdf2ffade22"><div class="ttname"><a href="classDispositivo.html#a365b30c0dc2a0c4373a40fdf2ffade22">Dispositivo::Dispositivo</a></div><div class="ttdeci">Dispositivo(int id, std::string nombre, double potencia)</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:30</div></div>
+<div class="ttc" id="aclassDispositivo_html_a4d470c1481fd167db94e6be4f08a259c"><div class="ttname"><a href="classDispositivo.html#a4d470c1481fd167db94e6be4f08a259c">Dispositivo::getId</a></div><div class="ttdeci">int getId() const</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:43</div></div>
+<div class="ttc" id="aclassDispositivo_html_a57501298695e1f5784df1255722e84da"><div class="ttname"><a href="classDispositivo.html#a57501298695e1f5784df1255722e84da">Dispositivo::potenciaWatts</a></div><div class="ttdeci">double potenciaWatts</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:26</div></div>
+<div class="ttc" id="aclassDispositivo_html_a6c8eba32c81ea7eb52076335d401e0e2"><div class="ttname"><a href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">Dispositivo::nombre</a></div><div class="ttdeci">std::string nombre</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:25</div></div>
+<div class="ttc" id="aclassDispositivo_html_a7bfd976c28c146964bc02b8dfaaa8ff8"><div class="ttname"><a href="classDispositivo.html#a7bfd976c28c146964bc02b8dfaaa8ff8">Dispositivo::encender</a></div><div class="ttdeci">virtual void encender()=0</div></div>
+<div class="ttc" id="aclassDispositivo_html_a8140c9b0b9af646ec6201cf9b782a727"><div class="ttname"><a href="classDispositivo.html#a8140c9b0b9af646ec6201cf9b782a727">Dispositivo::getTipo</a></div><div class="ttdeci">virtual std::string getTipo() const =0</div></div>
+<div class="ttc" id="aclassDispositivo_html_a9ed6e1aa610907334a553ca041801494"><div class="ttname"><a href="classDispositivo.html#a9ed6e1aa610907334a553ca041801494">Dispositivo::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:24</div></div>
+<div class="ttc" id="aclassDispositivo_html_aa89ac1526aca6caf819c332b32c3b63c"><div class="ttname"><a href="classDispositivo.html#aa89ac1526aca6caf819c332b32c3b63c">Dispositivo::getEstado</a></div><div class="ttdeci">Estado getEstado() const</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:39</div></div>
+<div class="ttc" id="aclassDispositivo_html_aab817b444b260ababfa55f4e77fb7e46"><div class="ttname"><a href="classDispositivo.html#aab817b444b260ababfa55f4e77fb7e46">Dispositivo::apagar</a></div><div class="ttdeci">virtual void apagar()=0</div></div>
+<div class="ttc" id="aclassDispositivo_html_ab8ac8f0267b52b1bcef708583173e5a1"><div class="ttname"><a href="classDispositivo.html#ab8ac8f0267b52b1bcef708583173e5a1">Dispositivo::~Dispositivo</a></div><div class="ttdeci">virtual ~Dispositivo()</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:33</div></div>
+<div class="ttc" id="aclassDispositivo_html_adcb5449c96590bd3cf82462716c20827"><div class="ttname"><a href="classDispositivo.html#adcb5449c96590bd3cf82462716c20827">Dispositivo::getPotencia</a></div><div class="ttdeci">double getPotencia() const</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:42</div></div>
+<div class="ttc" id="aclassDispositivo_html_aef822b39538e62f54064f5bfc875fa42"><div class="ttname"><a href="classDispositivo.html#aef822b39538e62f54064f5bfc875fa42">Dispositivo::getNombre</a></div><div class="ttdeci">std::string getNombre() const</div><div class="ttdef"><b>Definition:</b> Dispositivo.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
