@@ -77,9 +77,9 @@ Requerimientos funcionales</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">#   </th><th class="markdownTableHeadNone">Requerimiento   </th><th class="markdownTableHeadNone">Implementación    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Autenticación de usuarios   </td><td class="markdownTableBodyNone">Ventana de inicio de sesión (<code><a class="el" href="classLoginDialog.html">LoginDialog</a></code>). Valida contra la tabla <code>Usuarios</code>; las contraseñas se guardan cifradas con SHA-256. Máximo 3 intentos.    </td></tr>
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Autenticación de usuarios   </td><td class="markdownTableBodyNone">Ventana de inicio de sesión (<code><a class="el" href="classLoginDialog.html" title="Diálogo de inicio de sesión que se muestra antes de la ventana principal.">LoginDialog</a></code>). Valida contra la tabla <code>Usuarios</code>; las contraseñas se guardan cifradas con SHA-256. Máximo 3 intentos.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Registro de dispositivos   </td><td class="markdownTableBodyNone">Formulario con nombre, tipo (<a class="el" href="classLuz.html">Luz</a>, <a class="el" href="classPersiana.html">Persiana</a>, <a class="el" href="classSensor.html">Sensor</a>) y potencia. Valida campos vacíos, potencias inválidas y nombres repetidos. Los dispositivos se guardan en la BD y se cargan al iniciar.    </td></tr>
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Registro de dispositivos   </td><td class="markdownTableBodyNone">Formulario con nombre, tipo (<a class="el" href="classLuz.html" title="Luz del hogar. Al encenderse recupera su último nivel de brillo.">Luz</a>, <a class="el" href="classPersiana.html" title="Persiana motorizada: &quot;encender&quot; la abre y &quot;apagar&quot; la cierra.">Persiana</a>, <a class="el" href="classSensor.html" title="Sensor que toma una lectura al activarse.">Sensor</a>) y potencia. Valida campos vacíos, potencias inválidas y nombres repetidos. Los dispositivos se guardan en la BD y se cargan al iniciar.    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Activación y desactivación desde la GUI   </td><td class="markdownTableBodyNone">Botones <b>Encender</b> y <b>Apagar</b> sobre el dispositivo seleccionado.    </td></tr>
 <tr class="markdownTableRowEven">
@@ -108,23 +108,23 @@ Adicionales</h2>
 <hr  />
 <h1><a class="anchor" id="autotoc_md7"></a>
 Diseño orientado a objetos</h1>
-<h1><a class="anchor" id="autotoc_md8"></a>
-Dispositivo  (clase abstracta)</h1>
-<p>┌────────────┼────────────┐ </p>
-<h1><a class="anchor" id="autotoc_md9"></a>
-Luz        Persiana      Sensor</h1>
-<p>**<code><a class="el" href="classDispositivo.html">Dispositivo</a></code>** es una clase abstracta con métodos virtuales puros: <code>encender()</code>, <code>apagar()</code> y <code>getTipo()</code>, además del método virtual <code>getDetalle()</code>.</p><ul>
+<div class="fragment"><div class="line">            Dispositivo  (clase abstracta)</div>
+<div class="line">    ┌────────────┼────────────┐</div>
+<div class="line">   Luz        Persiana      Sensor</div>
+<div class="line">(brillo %)  (apertura %)  (lectura)</div>
+</div><!-- fragment --><ul>
+<li>**<code><a class="el" href="classDispositivo.html" title="Clase base abstracta para todos los dispositivos del hogar.">Dispositivo</a></code>** es una clase abstracta con métodos virtuales puros: <code>encender()</code>, <code>apagar()</code> y <code>getTipo()</code>, además del método virtual <code>getDetalle()</code>.</li>
 <li><b>Polimorfismo:</b> cada clase derivada implementa esos métodos a su manera:<ul>
-<li><code><a class="el" href="classLuz.html">Luz</a></code>: al encender recupera su último brillo; al apagar el brillo pasa a 0 %.</li>
-<li><code><a class="el" href="classPersiana.html">Persiana</a></code>: "encender" la abre al 100 % y "apagar" la cierra.</li>
-<li><code><a class="el" href="classSensor.html">Sensor</a></code>: al encender toma una lectura (simulada); al apagar deja de medir.</li>
+<li><code><a class="el" href="classLuz.html" title="Luz del hogar. Al encenderse recupera su último nivel de brillo.">Luz</a></code>: al encender recupera su último brillo; al apagar el brillo pasa a 0 %.</li>
+<li><code><a class="el" href="classPersiana.html" title="Persiana motorizada: &quot;encender&quot; la abre y &quot;apagar&quot; la cierra.">Persiana</a></code>: "encender" la abre al 100 % y "apagar" la cierra.</li>
+<li><code><a class="el" href="classSensor.html" title="Sensor que toma una lectura al activarse.">Sensor</a></code>: al encender toma una lectura (simulada); al apagar deja de medir.</li>
 </ul>
 </li>
-<li>**<code><a class="el" href="classGestorDomotica.html">GestorDomotica</a></code>** guarda todos los dispositivos en un <code>std::vector&lt;Dispositivo*&gt;</code> y los trata de forma uniforme a través de la clase base.</li>
-<li>**<code><a class="el" href="classBaseDatos.html">BaseDatos</a></code>** encapsula todo el acceso a SQLite usando sentencias preparadas, para evitar inyección SQL.</li>
-<li>**<code><a class="el" href="classMainWindow.html">MainWindow</a></code>** y **<code><a class="el" href="classLoginDialog.html">LoginDialog</a></code>** forman la interfaz gráfica.</li>
+<li>**<code><a class="el" href="classGestorDomotica.html" title="Guarda y administra todos los dispositivos del hogar.">GestorDomotica</a></code>** guarda todos los dispositivos en un <code>std::vector&lt;Dispositivo*&gt;</code> y los trata de forma uniforme a través de la clase base.</li>
+<li>**<code><a class="el" href="classBaseDatos.html" title="Maneja la conexión con SQLite y todas las consultas del sistema.">BaseDatos</a></code>** encapsula todo el acceso a SQLite usando sentencias preparadas, para evitar inyección SQL.</li>
+<li>**<code><a class="el" href="classMainWindow.html" title="Panel de control del sistema domótico.">MainWindow</a></code>** y **<code><a class="el" href="classLoginDialog.html" title="Diálogo de inicio de sesión que se muestra antes de la ventana principal.">LoginDialog</a></code>** forman la interfaz gráfica.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 Base de datos (&lt;tt&gt;domotica.db&lt;/tt&gt;)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -136,8 +136,76 @@ Base de datos (&lt;tt&gt;domotica.db&lt;/tt&gt;)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>Eventos</code>   </td><td class="markdownTableBodyNone"><code>id</code>, <code>dispositivo</code>, <code>accion</code>, <code>fecha</code>   </td></tr>
 </table>
-<p>El archivo <code>domotica.db</code> se crea automáticamente junto al ejecutable (dentro de <code>build/</code>) la primera vez que se ejecuta el programa. </p>
-</div></div><!-- PageDoc -->
+<p>El archivo <code>domotica.db</code> se crea automáticamente junto al ejecutable (dentro de <code>build/</code>) la primera vez que se ejecuta el programa.</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md10"></a>
+Estructura del proyecto</h1>
+<div class="fragment"><div class="line">Proyecto-final-ALSE-2026-2/</div>
+<div class="line">├── include/            Cabeceras (.h)</div>
+<div class="line">│   ├── Dispositivo.h   Clase base abstracta y enum Estado</div>
+<div class="line">│   ├── Luz.h           Luz con brillo regulable</div>
+<div class="line">│   ├── Persiana.h      Persiana con porcentaje de apertura</div>
+<div class="line">│   ├── Sensor.h        Sensor con lectura simulada</div>
+<div class="line">│   ├── GestorDomotica.h</div>
+<div class="line">│   ├── BaseDatos.h</div>
+<div class="line">│   ├── LoginDialog.h</div>
+<div class="line">│   └── MainWindow.h</div>
+<div class="line">├── src/                Implementación (.cpp) e interfaz (.ui)</div>
+<div class="line">│   ├── main.cpp</div>
+<div class="line">│   ├── MainWindow.cpp</div>
+<div class="line">│   ├── MainWindow.ui</div>
+<div class="line">│   └── BaseDatos.cpp</div>
+<div class="line">├── docs/html/          Documentación generada con Doxygen</div>
+<div class="line">├── CMakeLists.txt</div>
+<div class="line">├── Doxyfile</div>
+<div class="line">└── README.md</div>
+</div><!-- fragment --><hr  />
+<h1><a class="anchor" id="autotoc_md12"></a>
+Requisitos</h1>
+<ul>
+<li>Ubuntu 22.04 (o WSL con Ubuntu)</li>
+<li>CMake 3.10 o superior y un compilador de C++ (g++)</li>
+<li>Qt5 (Widgets) y QtCharts</li>
+<li>SQLite3</li>
+</ul>
+<p>Instalación de dependencias:</p>
+<div class="fragment"><div class="line">sudo apt update</div>
+<div class="line">sudo apt install build-essential cmake qtbase5-dev libqt5charts5-dev libsqlite3-dev</div>
+</div><!-- fragment --><hr  />
+<h1><a class="anchor" id="autotoc_md14"></a>
+Compilación y ejecución</h1>
+<div class="fragment"><div class="line">git clone https://github.com/SamuJimenez06/Proyecto-final-ALSE-2026-2.git</div>
+<div class="line">cd Proyecto-final-ALSE-2026-2</div>
+<div class="line">mkdir build &amp;&amp; cd build</div>
+<div class="line">cmake ..</div>
+<div class="line">make</div>
+<div class="line">./ProyectoFinal</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
+Usuario de prueba</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Usuario   </th><th class="markdownTableHeadNone">Contraseña    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>admin</code>   </td><td class="markdownTableBodyNone"><code>1234</code>   </td></tr>
+</table>
+<hr  />
+<h1><a class="anchor" id="autotoc_md17"></a>
+Uso rápido</h1>
+<ol type="1">
+<li>Inicie sesión con el usuario de prueba.</li>
+<li>En <b>Dispositivos</b>, escriba un nombre, elija el tipo, ingrese la potencia y presione <b>Registrar <a class="el" href="classDispositivo.html" title="Clase base abstracta para todos los dispositivos del hogar.">Dispositivo</a></b>.</li>
+<li>Seleccione un dispositivo de la lista y use <b>Encender</b>, <b>Apagar</b> o <b>Simular Fallo</b>.</li>
+<li>En <b>Rutinas</b>, ejecute Modo Noche, Salir de Casa o Buenos Días.</li>
+<li>En <b>Historial de Eventos</b>, consulte todas las acciones con fecha y hora.</li>
+<li>En <b>Consumo y Gráficas</b>, ingrese las horas de uso y presione <b>Calcular kWh</b>.</li>
+</ol>
+<hr  />
+<h1><a class="anchor" id="autotoc_md19"></a>
+Documentación</h1>
+<p>La documentación del código está en <code>docs/html/index.html</code>. Para generarla de nuevo:</p>
+<div class="fragment"><div class="line">sudo apt install doxygen graphviz</div>
+<div class="line">doxygen Doxyfile</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

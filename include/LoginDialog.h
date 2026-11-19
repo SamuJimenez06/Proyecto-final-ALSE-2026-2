@@ -1,6 +1,7 @@
 /**
  * @file LoginDialog.h
  * @brief Ventana de inicio de sesión para el sistema domótico.
+ *        Valida usuario y contraseña contra la tabla Usuarios de la base de datos.
  * @author Samuel Jiménez, Brayan Villamil
  * @date 2026-11
  */
@@ -15,17 +16,24 @@
 #include <QLabel>
 #include "BaseDatos.h"
 
+/**
+ * @class LoginDialog
+ * @brief Diálogo de inicio de sesión que se muestra antes de la ventana principal.
+ *
+ * Permite máximo 3 intentos fallidos; después se cierra la aplicación.
+ */
 class LoginDialog : public QDialog {
     Q_OBJECT
 private:
-    BaseDatos& bd;
+    BaseDatos& bd;          ///< Base de datos donde están los usuarios
     QLineEdit *txtUsuario;
     QLineEdit *txtClave;
     QPushButton *btnIngresar;
-    QLabel *lblMensaje;
-    int intentos;
+    QLabel *lblMensaje;     ///< Muestra el error si las credenciales son incorrectas
+    int intentos;           ///< Intentos fallidos
 
 private slots:
+    /// Compara usuario y contraseña con la base de datos.
     void verificarCredenciales() {
         QString usuario = txtUsuario->text().trimmed();
         QString clave = txtClave->text();
@@ -36,19 +44,24 @@ private slots:
         }
 
         if (bd.validarUsuario(usuario.toStdString(), clave.toStdString())) {
-            accept();
+            accept();   // cierra el diálogo con resultado "Accepted"
         } else {
             intentos++;
             lblMensaje->setText(QString("Usuario o contraseña incorrectos (intento %1 de 3).").arg(intentos));
             txtClave->clear();
             txtClave->setFocus();
             if (intentos >= 3) {
-                reject();
+                reject();   // demasiados intentos: se cierra el programa
             }
         }
     }
 
 public:
+    /**
+     * @brief Construye el formulario de inicio de sesión.
+     * @param baseDatos Base de datos donde se validan los usuarios.
+     * @param parent Widget padre (normalmente nullptr).
+     */
     explicit LoginDialog(BaseDatos& baseDatos, QWidget *parent = nullptr)
         : QDialog(parent), bd(baseDatos), intentos(0) {
         setWindowTitle("Iniciar Sesión - Domótica ALSE");

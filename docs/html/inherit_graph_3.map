@@ -1,4 +1,4 @@
 <map id="Representación gráfica de la clase" name="Representación gráfica de la clase">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node2" href="$classLoginDialog.html" title=" " alt="" coords="128,5,227,32"/>
+<area shape="rect" id="node2" href="$classLoginDialog.html" title="Diálogo de inicio de sesión que se muestra antes de la ventana principal." alt="" coords="128,5,227,32"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="include/Sensor.h" name="include/Sensor.h">
-<area shape="rect" id="node1" title="Clase derivada que modela un sensor domótico." alt="" coords="19,5,147,32"/>
+<area shape="rect" id="node1" title="Clase derivada que modela un sensor domótico (temperatura, humo, movimiento...)." alt="" coords="19,5,147,32"/>
 <area shape="rect" id="node2" href="$MainWindow_8cpp.html" title="Implementación de la lógica de la ventana principal, eventos, rutinas y gráficas." alt="" coords="5,80,160,107"/>
 </map>

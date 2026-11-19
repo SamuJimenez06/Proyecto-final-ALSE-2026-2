@@ -73,13 +73,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Panel de control del sistema domótico.  
+ <a href="classMainWindow.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="MainWindow_8h_source.html">MainWindow.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de MainWindow</div>
 <div class="dyncontent">
 <div class="center"><img src="classMainWindow__inherit__graph.png" border="0" usemap="#aMainWindow_inherit__map" alt="Inheritance graph"/></div>
 <map name="aMainWindow_inherit__map" id="aMainWindow_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,232,457"/>
+<area shape="rect" title="Panel de control del sistema domótico." alt="" coords="5,131,232,457"/>
 <area shape="rect" title=" " alt="" coords="61,5,177,83"/>
 </map>
 </div>
@@ -88,60 +91,85 @@ Diagrama de colaboración para MainWindow:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMainWindow__coll__graph.png" border="0" usemap="#aMainWindow_coll__map" alt="Collaboration graph"/></div>
 <map name="aMainWindow_coll__map" id="aMainWindow_coll__map">
-<area shape="rect" title=" " alt="" coords="118,292,345,589"/>
+<area shape="rect" title="Panel de control del sistema domótico." alt="" coords="118,292,345,589"/>
 <area shape="rect" title=" " alt="" coords="5,79,121,156"/>
-<area shape="rect" href="classBaseDatos.html" title=" " alt="" coords="146,5,317,229"/>
-<area shape="rect" href="classGestorDomotica.html" title=" " alt="" coords="341,57,519,178"/>
+<area shape="rect" href="classBaseDatos.html" title="Maneja la conexión con SQLite y todas las consultas del sistema." alt="" coords="146,5,317,229"/>
+<area shape="rect" href="classGestorDomotica.html" title="Guarda y administra todos los dispositivos del hogar." alt="" coords="341,57,519,178"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea la ventana, abre la base de datos y carga los dispositivos guardados.  <a href="classMainWindow.html#a996c5a2b6f77944776856f08ec30858d">Más...</a><br /></td></tr>
 <tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a> ()</td></tr>
+<tr class="memdesc:ae98d00a93bc118200eeef9f9bba1dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera la interfaz generada por Qt Designer.  <a href="classMainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7">Más...</a><br /></td></tr>
 <tr class="separator:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a292d3f614c653c5fcc4ab2f01967512f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a292d3f614c653c5fcc4ab2f01967512f">refrescarTodo</a> ()</td></tr>
+<tr class="memdesc:a292d3f614c653c5fcc4ab2f01967512f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualiza la lista de dispositivos, el historial y la gráfica de consumo.  <a href="classMainWindow.html#a292d3f614c653c5fcc4ab2f01967512f">Más...</a><br /></td></tr>
 <tr class="separator:a292d3f614c653c5fcc4ab2f01967512f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Slots privados</h2></td></tr>
 <tr class="memitem:a8524d15dc550ff9a5ee3f852e7c92107"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a8524d15dc550ff9a5ee3f852e7c92107">on_btnEncender_clicked</a> ()</td></tr>
+<tr class="memdesc:a8524d15dc550ff9a5ee3f852e7c92107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enciende el dispositivo seleccionado (bloqueado si está en fallo).  <a href="classMainWindow.html#a8524d15dc550ff9a5ee3f852e7c92107">Más...</a><br /></td></tr>
 <tr class="separator:a8524d15dc550ff9a5ee3f852e7c92107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c0b110c31a2d6df8a83551abeaab046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a5c0b110c31a2d6df8a83551abeaab046">on_btnApagar_clicked</a> ()</td></tr>
+<tr class="memdesc:a5c0b110c31a2d6df8a83551abeaab046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apaga el dispositivo seleccionado (también lo reinicia si estaba en fallo).  <a href="classMainWindow.html#a5c0b110c31a2d6df8a83551abeaab046">Más...</a><br /></td></tr>
 <tr class="separator:a5c0b110c31a2d6df8a83551abeaab046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4542627776ec6b117b5b4f77a745a065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a4542627776ec6b117b5b4f77a745a065">on_btnSimularFallo_clicked</a> ()</td></tr>
+<tr class="memdesc:a4542627776ec6b117b5b4f77a745a065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pone en estado de fallo el dispositivo seleccionado.  <a href="classMainWindow.html#a4542627776ec6b117b5b4f77a745a065">Más...</a><br /></td></tr>
 <tr class="separator:a4542627776ec6b117b5b4f77a745a065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d389176385c5b1b5eed111d3b2a843c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a5d389176385c5b1b5eed111d3b2a843c">on_btnRegistrar_clicked</a> ()</td></tr>
+<tr class="memdesc:a5d389176385c5b1b5eed111d3b2a843c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida el formulario y registra un nuevo dispositivo.  <a href="classMainWindow.html#a5d389176385c5b1b5eed111d3b2a843c">Más...</a><br /></td></tr>
 <tr class="separator:a5d389176385c5b1b5eed111d3b2a843c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e193a6d86900fd0fa6ac0aaa07103f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#ab9e193a6d86900fd0fa6ac0aaa07103f">on_btnModoNoche_clicked</a> ()</td></tr>
+<tr class="memdesc:ab9e193a6d86900fd0fa6ac0aaa07103f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rutina: apaga luces y cierra persianas (los sensores siguen activos).  <a href="classMainWindow.html#ab9e193a6d86900fd0fa6ac0aaa07103f">Más...</a><br /></td></tr>
 <tr class="separator:ab9e193a6d86900fd0fa6ac0aaa07103f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a483416542220690dfe5486e0a5fb6fe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a483416542220690dfe5486e0a5fb6fe4">on_btnSalirCasa_clicked</a> ()</td></tr>
+<tr class="memdesc:a483416542220690dfe5486e0a5fb6fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rutina: apaga todos los dispositivos.  <a href="classMainWindow.html#a483416542220690dfe5486e0a5fb6fe4">Más...</a><br /></td></tr>
 <tr class="separator:a483416542220690dfe5486e0a5fb6fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a725e7989fc7ea72bbae3a91ef4ab88a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a725e7989fc7ea72bbae3a91ef4ab88a6">on_btnBuenosDias_clicked</a> ()</td></tr>
+<tr class="memdesc:a725e7989fc7ea72bbae3a91ef4ab88a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rutina: enciende las luces que no estén en fallo.  <a href="classMainWindow.html#a725e7989fc7ea72bbae3a91ef4ab88a6">Más...</a><br /></td></tr>
 <tr class="separator:a725e7989fc7ea72bbae3a91ef4ab88a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6634fe1dc0111b851e15dd8ff370683"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#ae6634fe1dc0111b851e15dd8ff370683">on_btnCalcularConsumo_clicked</a> ()</td></tr>
+<tr class="memdesc:ae6634fe1dc0111b851e15dd8ff370683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalcula el consumo con las horas ingresadas por el usuario.  <a href="classMainWindow.html#ae6634fe1dc0111b851e15dd8ff370683">Más...</a><br /></td></tr>
 <tr class="separator:ae6634fe1dc0111b851e15dd8ff370683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Métodos privados</h2></td></tr>
 <tr class="memitem:a09fdb77b79dabb75d806c537aab10de9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a09fdb77b79dabb75d806c537aab10de9">actualizarListaDispositivos</a> ()</td></tr>
+<tr class="memdesc:a09fdb77b79dabb75d806c537aab10de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra cada dispositivo con su tipo, estado (con color), potencia y detalle.  <a href="classMainWindow.html#a09fdb77b79dabb75d806c537aab10de9">Más...</a><br /></td></tr>
 <tr class="separator:a09fdb77b79dabb75d806c537aab10de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5f0f8204074db7a24e4c99078c9cc4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#ac5f0f8204074db7a24e4c99078c9cc4b">actualizarTablaEventos</a> ()</td></tr>
+<tr class="memdesc:ac5f0f8204074db7a24e4c99078c9cc4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga los últimos 50 eventos de la base de datos en la tabla.  <a href="classMainWindow.html#ac5f0f8204074db7a24e4c99078c9cc4b">Más...</a><br /></td></tr>
 <tr class="separator:ac5f0f8204074db7a24e4c99078c9cc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a196c1e337358e421423f96706fe0ae00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a196c1e337358e421423f96706fe0ae00">actualizarConsumoYGraficas</a> ()</td></tr>
+<tr class="memdesc:a196c1e337358e421423f96706fe0ae00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el consumo de cada dispositivo y redibuja la gráfica de barras.  <a href="classMainWindow.html#a196c1e337358e421423f96706fe0ae00">Más...</a><br /></td></tr>
 <tr class="separator:a196c1e337358e421423f96706fe0ae00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atributos privados</h2></td></tr>
 <tr class="memitem:a35466a70ed47252a0191168126a352a5"><td class="memItemLeft" align="right" valign="top">Ui::MainWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a35466a70ed47252a0191168126a352a5">ui</a></td></tr>
+<tr class="memdesc:a35466a70ed47252a0191168126a352a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interfaz diseñada en <a class="el" href="classMainWindow.html#a35466a70ed47252a0191168126a352a5" title="Interfaz diseñada en MainWindow.ui.">MainWindow.ui</a>.  <a href="classMainWindow.html#a35466a70ed47252a0191168126a352a5">Más...</a><br /></td></tr>
 <tr class="separator:a35466a70ed47252a0191168126a352a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb7807a17fc861c0f9674d58102d82f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGestorDomotica.html">GestorDomotica</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#acb7807a17fc861c0f9674d58102d82f3">gestor</a></td></tr>
+<tr class="memdesc:acb7807a17fc861c0f9674d58102d82f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispositivos en memoria.  <a href="classMainWindow.html#acb7807a17fc861c0f9674d58102d82f3">Más...</a><br /></td></tr>
 <tr class="separator:acb7807a17fc861c0f9674d58102d82f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab781245f53eb0484d44c3a04f0b020"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBaseDatos.html">BaseDatos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a0ab781245f53eb0484d44c3a04f0b020">bd</a></td></tr>
+<tr class="memdesc:a0ab781245f53eb0484d44c3a04f0b020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conexión a la base de datos.  <a href="classMainWindow.html#a0ab781245f53eb0484d44c3a04f0b020">Más...</a><br /></td></tr>
 <tr class="separator:a0ab781245f53eb0484d44c3a04f0b020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Panel de control del sistema domótico. </p>
+<p>Organiza la aplicación en cuatro pestañas:</p><ul>
+<li><b>Dispositivos:</b> registro, encendido/apagado y simulación de fallos.</li>
+<li><b>Rutinas:</b> Modo Noche, Salir de Casa y Buenos Días.</li>
+<li><b>Historial de Eventos:</b> acciones guardadas en la base de datos.</li>
+<li><b>Consumo y Gráficas:</b> estimación de kWh por dispositivo. </li>
+</ul>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="a996c5a2b6f77944776856f08ec30858d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&nbsp;</a></span>MainWindow()</h2>
 
@@ -157,6 +185,14 @@ Atributos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Crea la ventana, abre la base de datos y carga los dispositivos guardados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Widget padre (normalmente nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -174,6 +210,8 @@ Atributos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Libera la interfaz generada por Qt Designer. </p>
 
 </div>
 </div>
@@ -201,6 +239,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Calcula el consumo de cada dispositivo y redibuja la gráfica de barras. </p>
+
 </div>
 </div>
 <a id="a09fdb77b79dabb75d806c537aab10de9"></a>
@@ -225,6 +265,8 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Muestra cada dispositivo con su tipo, estado (con color), potencia y detalle. </p>
 
 </div>
 </div>
@@ -251,6 +293,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Carga los últimos 50 eventos de la base de datos en la tabla. </p>
+
 </div>
 </div>
 <a id="a5c0b110c31a2d6df8a83551abeaab046"></a>
@@ -275,6 +319,8 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Apaga el dispositivo seleccionado (también lo reinicia si estaba en fallo). </p>
 
 </div>
 </div>
@@ -301,6 +347,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Rutina: enciende las luces que no estén en fallo. </p>
+
 </div>
 </div>
 <a id="ae6634fe1dc0111b851e15dd8ff370683"></a>
@@ -325,6 +373,8 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Recalcula el consumo con las horas ingresadas por el usuario. </p>
 
 </div>
 </div>
@@ -351,6 +401,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Enciende el dispositivo seleccionado (bloqueado si está en fallo). </p>
+
 </div>
 </div>
 <a id="ab9e193a6d86900fd0fa6ac0aaa07103f"></a>
@@ -375,6 +427,8 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Rutina: apaga luces y cierra persianas (los sensores siguen activos). </p>
 
 </div>
 </div>
@@ -401,6 +455,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Valida el formulario y registra un nuevo dispositivo. </p>
+
 </div>
 </div>
 <a id="a483416542220690dfe5486e0a5fb6fe4"></a>
@@ -425,6 +481,8 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Rutina: apaga todos los dispositivos. </p>
 
 </div>
 </div>
@@ -451,6 +509,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pone en estado de fallo el dispositivo seleccionado. </p>
+
 </div>
 </div>
 <a id="a292d3f614c653c5fcc4ab2f01967512f"></a>
@@ -467,6 +527,8 @@ Atributos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Actualiza la lista de dispositivos, el historial y la gráfica de consumo. </p>
 
 </div>
 </div>
@@ -491,6 +553,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Conexión a la base de datos. </p>
+
 </div>
 </div>
 <a id="acb7807a17fc861c0f9674d58102d82f3"></a>
@@ -513,6 +577,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Dispositivos en memoria. </p>
+
 </div>
 </div>
 <a id="a35466a70ed47252a0191168126a352a5"></a>
@@ -534,6 +600,8 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Interfaz diseñada en <a class="el" href="classMainWindow.html#a35466a70ed47252a0191168126a352a5" title="Interfaz diseñada en MainWindow.ui.">MainWindow.ui</a>. </p>
 
 </div>
 </div>

@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Definición de la clase base abstracta <a class="el" href="classDispositivo.html">Dispositivo</a> y del enumerador Estado.  
+<p>Definición de la clase base abstracta <a class="el" href="classDispositivo.html" title="Clase base abstracta para todos los dispositivos del hogar.">Dispositivo</a> y del enumerador Estado.  
 <a href="#details">Más...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -95,7 +95,7 @@ Gráfico de los archivos que directa o indirectamente incluyen a este archivo:</
 <area shape="rect" href="GestorDomotica_8h.html" title="Administrador de la colección en memoria de dispositivos domóticos." alt="" coords="22,80,213,107"/>
 <area shape="rect" href="Luz_8h.html" title="Clase derivada que modela una luz domótica con brillo regulable." alt="" coords="197,155,304,181"/>
 <area shape="rect" href="Persiana_8h.html" title="Clase derivada que modela una persiana motorizada." alt="" coords="328,155,469,181"/>
-<area shape="rect" href="Sensor_8h.html" title="Clase derivada que modela un sensor domótico." alt="" coords="428,80,556,107"/>
+<area shape="rect" href="Sensor_8h.html" title="Clase derivada que modela un sensor domótico (temperatura, humo, movimiento...)." alt="" coords="428,80,556,107"/>
 <area shape="rect" href="MainWindow_8h.html" title="Ventana principal: dispositivos, rutinas, historial de eventos y consumo con gráficas." alt="" coords="5,155,173,181"/>
 <area shape="rect" href="main_8cpp.html" title="Punto de entrada: muestra primero el inicio de sesión y, si es correcto, la ventana principal." alt="" coords="37,229,142,256"/>
 <area shape="rect" href="MainWindow_8cpp.html" title="Implementación de la lógica de la ventana principal, eventos, rutinas y gráficas." alt="" coords="247,229,401,256"/>
@@ -107,6 +107,7 @@ Gráfico de los archivos que directa o indirectamente incluyen a este archivo:</
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Clases</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html">Dispositivo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clase base abstracta para todos los dispositivos del hogar.  <a href="classDispositivo.html#details">Más...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -115,10 +116,11 @@ Enumeraciones</h2></td></tr>
 , <a class="el" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49a460797720d3646af77e673691226c12c">Apagado</a>
 , <a class="el" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49af215802f06094cf00718ad119f279a6b">Fallo</a>
  }</td></tr>
+<tr class="memdesc:a9d4630b1e0c310d9b8c562abd8114c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estados operativos posibles de un dispositivo domótico.  <a href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Más...</a><br /></td></tr>
 <tr class="separator:a9d4630b1e0c310d9b8c562abd8114c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock"><p>Definición de la clase base abstracta <a class="el" href="classDispositivo.html">Dispositivo</a> y del enumerador Estado. </p>
+<div class="textblock"><p>Definición de la clase base abstracta <a class="el" href="classDispositivo.html" title="Clase base abstracta para todos los dispositivos del hogar.">Dispositivo</a> y del enumerador Estado. </p>
 <dl class="section author"><dt>Autor</dt><dd>Samuel Jiménez, Brayan Villamil </dd></dl>
 <dl class="section date"><dt>Fecha</dt><dd>2026-11 </dd></dl>
 </div><h2 class="groupheader">Documentación de las enumeraciones</h2>
@@ -141,10 +143,15 @@ Enumeraciones</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Estados operativos posibles de un dispositivo domótico. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a9d4630b1e0c310d9b8c562abd8114c49a19ecf9ac55cd009d6fe6fee01d4ed33b"></a>Encendido&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d4630b1e0c310d9b8c562abd8114c49a460797720d3646af77e673691226c12c"></a>Apagado&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d4630b1e0c310d9b8c562abd8114c49af215802f06094cf00718ad119f279a6b"></a>Fallo&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a9d4630b1e0c310d9b8c562abd8114c49a19ecf9ac55cd009d6fe6fee01d4ed33b"></a>Encendido&#160;</td><td class="fielddoc"><p>El dispositivo está activo. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9d4630b1e0c310d9b8c562abd8114c49a460797720d3646af77e673691226c12c"></a>Apagado&#160;</td><td class="fielddoc"><p>El dispositivo está inactivo. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9d4630b1e0c310d9b8c562abd8114c49af215802f06094cf00718ad119f279a6b"></a>Fallo&#160;</td><td class="fielddoc"><p>El dispositivo presenta una falla y no puede encenderse. </p>
+</td></tr>
 </table>
 
 </div>

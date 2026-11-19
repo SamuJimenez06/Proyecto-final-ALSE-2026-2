@@ -72,13 +72,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Diálogo de inicio de sesión que se muestra antes de la ventana principal.  
+ <a href="classLoginDialog.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="LoginDialog_8h_source.html">LoginDialog.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de LoginDialog</div>
 <div class="dyncontent">
 <div class="center"><img src="classLoginDialog__inherit__graph.png" border="0" usemap="#aLoginDialog_inherit__map" alt="Inheritance graph"/></div>
 <map name="aLoginDialog_inherit__map" id="aLoginDialog_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,184,296"/>
+<area shape="rect" title="Diálogo de inicio de sesión que se muestra antes de la ventana principal." alt="" coords="5,131,184,296"/>
 <area shape="rect" title=" " alt="" coords="57,5,132,83"/>
 </map>
 </div>
@@ -87,25 +90,28 @@ Diagrama de colaboración para LoginDialog:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLoginDialog__coll__graph.png" border="0" usemap="#aLoginDialog_coll__map" alt="Collaboration graph"/></div>
 <map name="aLoginDialog_coll__map" id="aLoginDialog_coll__map">
-<area shape="rect" title=" " alt="" coords="27,292,205,443"/>
+<area shape="rect" title="Diálogo de inicio de sesión que se muestra antes de la ventana principal." alt="" coords="27,292,205,443"/>
 <area shape="rect" title=" " alt="" coords="5,79,80,156"/>
-<area shape="rect" href="classBaseDatos.html" title=" " alt="" coords="104,5,275,229"/>
+<area shape="rect" href="classBaseDatos.html" title="Maneja la conexión con SQLite y todas las consultas del sistema." alt="" coords="104,5,275,229"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a72d24dad84060e20e6cd44267ffba49c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginDialog.html#a72d24dad84060e20e6cd44267ffba49c">LoginDialog</a> (<a class="el" href="classBaseDatos.html">BaseDatos</a> &amp;baseDatos, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a72d24dad84060e20e6cd44267ffba49c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construye el formulario de inicio de sesión.  <a href="classLoginDialog.html#a72d24dad84060e20e6cd44267ffba49c">Más...</a><br /></td></tr>
 <tr class="separator:a72d24dad84060e20e6cd44267ffba49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Slots privados</h2></td></tr>
 <tr class="memitem:ad2fb39bc5b60277beb8269ecdd2df884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginDialog.html#ad2fb39bc5b60277beb8269ecdd2df884">verificarCredenciales</a> ()</td></tr>
+<tr class="memdesc:ad2fb39bc5b60277beb8269ecdd2df884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compara usuario y contraseña con la base de datos.  <a href="classLoginDialog.html#ad2fb39bc5b60277beb8269ecdd2df884">Más...</a><br /></td></tr>
 <tr class="separator:ad2fb39bc5b60277beb8269ecdd2df884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atributos privados</h2></td></tr>
 <tr class="memitem:abd726ea6e4faaa2b9a8ca4a3612431bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBaseDatos.html">BaseDatos</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginDialog.html#abd726ea6e4faaa2b9a8ca4a3612431bb">bd</a></td></tr>
+<tr class="memdesc:abd726ea6e4faaa2b9a8ca4a3612431bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base de datos donde están los usuarios.  <a href="classLoginDialog.html#abd726ea6e4faaa2b9a8ca4a3612431bb">Más...</a><br /></td></tr>
 <tr class="separator:abd726ea6e4faaa2b9a8ca4a3612431bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd3563a393cb5d9bcba431085753bc5"><td class="memItemLeft" align="right" valign="top">QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginDialog.html#a1bd3563a393cb5d9bcba431085753bc5">txtUsuario</a></td></tr>
 <tr class="separator:a1bd3563a393cb5d9bcba431085753bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,11 +120,16 @@ Atributos privados</h2></td></tr>
 <tr class="memitem:ad4b88c56651ade52301a0ab6cda6a177"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginDialog.html#ad4b88c56651ade52301a0ab6cda6a177">btnIngresar</a></td></tr>
 <tr class="separator:ad4b88c56651ade52301a0ab6cda6a177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab802abed7215a81f9383deb0cdae2cc4"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginDialog.html#ab802abed7215a81f9383deb0cdae2cc4">lblMensaje</a></td></tr>
+<tr class="memdesc:ab802abed7215a81f9383deb0cdae2cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el error si las credenciales son incorrectas.  <a href="classLoginDialog.html#ab802abed7215a81f9383deb0cdae2cc4">Más...</a><br /></td></tr>
 <tr class="separator:ab802abed7215a81f9383deb0cdae2cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5adaddd1bda60037e477cdab3cf2e107"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginDialog.html#a5adaddd1bda60037e477cdab3cf2e107">intentos</a></td></tr>
+<tr class="memdesc:a5adaddd1bda60037e477cdab3cf2e107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intentos fallidos.  <a href="classLoginDialog.html#a5adaddd1bda60037e477cdab3cf2e107">Más...</a><br /></td></tr>
 <tr class="separator:a5adaddd1bda60037e477cdab3cf2e107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Diálogo de inicio de sesión que se muestra antes de la ventana principal. </p>
+<p>Permite máximo 3 intentos fallidos; después se cierra la aplicación. </p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="a72d24dad84060e20e6cd44267ffba49c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72d24dad84060e20e6cd44267ffba49c">&#9670;&nbsp;</a></span>LoginDialog()</h2>
 
@@ -153,6 +164,15 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Construye el formulario de inicio de sesión. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">baseDatos</td><td>Base de datos donde se validan los usuarios. </td></tr>
+    <tr><td class="paramname">parent</td><td>Widget padre (normalmente nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Documentación de las funciones miembro</h2>
@@ -179,6 +199,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Compara usuario y contraseña con la base de datos. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Documentación de los datos miembro</h2>
@@ -201,6 +223,8 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Base de datos donde están los usuarios. </p>
 
 </div>
 </div>
@@ -246,6 +270,8 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Intentos fallidos. </p>
+
 </div>
 </div>
 <a id="ab802abed7215a81f9383deb0cdae2cc4"></a>
@@ -267,6 +293,8 @@ Atributos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Muestra el error si las credenciales son incorrectas. </p>
 
 </div>
 </div>

@@ -71,16 +71,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Clase base abstracta para todos los dispositivos del hogar.  
+ <a href="classDispositivo.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Dispositivo_8h_source.html">Dispositivo.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagrama de herencias de Dispositivo</div>
 <div class="dyncontent">
 <div class="center"><img src="classDispositivo__inherit__graph.png" border="0" usemap="#aDispositivo_inherit__map" alt="Inheritance graph"/></div>
 <map name="aDispositivo_inherit__map" id="aDispositivo_inherit__map">
-<area shape="rect" title=" " alt="" coords="153,5,283,273"/>
-<area shape="rect" href="classLuz.html" title=" " alt="" coords="5,321,132,501"/>
-<area shape="rect" href="classPersiana.html" title=" " alt="" coords="156,329,280,494"/>
-<area shape="rect" href="classSensor.html" title=" " alt="" coords="304,321,425,501"/>
+<area shape="rect" title="Clase base abstracta para todos los dispositivos del hogar." alt="" coords="153,5,283,273"/>
+<area shape="rect" href="classLuz.html" title="Luz del hogar. Al encenderse recupera su último nivel de brillo." alt="" coords="5,321,132,501"/>
+<area shape="rect" href="classPersiana.html" title="Persiana motorizada: &quot;encender&quot; la abre y &quot;apagar&quot; la cierra." alt="" coords="156,329,280,494"/>
+<area shape="rect" href="classSensor.html" title="Sensor que toma una lectura al activarse." alt="" coords="304,321,425,501"/>
 </map>
 </div>
 <div class="dynheader">
@@ -88,27 +91,34 @@ Diagrama de colaboración para Dispositivo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDispositivo__coll__graph.png" border="0" usemap="#aDispositivo_coll__map" alt="Collaboration graph"/></div>
 <map name="aDispositivo_coll__map" id="aDispositivo_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,136,273"/>
+<area shape="rect" title="Clase base abstracta para todos los dispositivos del hogar." alt="" coords="5,5,136,273"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a365b30c0dc2a0c4373a40fdf2ffade22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#a365b30c0dc2a0c4373a40fdf2ffade22">Dispositivo</a> (int <a class="el" href="classDispositivo.html#a9ed6e1aa610907334a553ca041801494">id</a>, std::string <a class="el" href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">nombre</a>, double potencia)</td></tr>
+<tr class="memdesc:a365b30c0dc2a0c4373a40fdf2ffade22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construye un dispositivo apagado.  <a href="classDispositivo.html#a365b30c0dc2a0c4373a40fdf2ffade22">Más...</a><br /></td></tr>
 <tr class="separator:a365b30c0dc2a0c4373a40fdf2ffade22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8ac8f0267b52b1bcef708583173e5a1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#ab8ac8f0267b52b1bcef708583173e5a1">~Dispositivo</a> ()</td></tr>
+<tr class="memdesc:ab8ac8f0267b52b1bcef708583173e5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor virtual: garantiza que se destruya correctamente la clase derivada.  <a href="classDispositivo.html#ab8ac8f0267b52b1bcef708583173e5a1">Más...</a><br /></td></tr>
 <tr class="separator:ab8ac8f0267b52b1bcef708583173e5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bfd976c28c146964bc02b8dfaaa8ff8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#a7bfd976c28c146964bc02b8dfaaa8ff8">encender</a> ()=0</td></tr>
+<tr class="memdesc:a7bfd976c28c146964bc02b8dfaaa8ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activa el dispositivo. Cada tipo define qué significa "encender".  <a href="classDispositivo.html#a7bfd976c28c146964bc02b8dfaaa8ff8">Más...</a><br /></td></tr>
 <tr class="separator:a7bfd976c28c146964bc02b8dfaaa8ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab817b444b260ababfa55f4e77fb7e46"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#aab817b444b260ababfa55f4e77fb7e46">apagar</a> ()=0</td></tr>
+<tr class="memdesc:aab817b444b260ababfa55f4e77fb7e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desactiva el dispositivo. También reinicia un dispositivo en fallo.  <a href="classDispositivo.html#aab817b444b260ababfa55f4e77fb7e46">Más...</a><br /></td></tr>
 <tr class="separator:aab817b444b260ababfa55f4e77fb7e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8140c9b0b9af646ec6201cf9b782a727"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#a8140c9b0b9af646ec6201cf9b782a727">getTipo</a> () const =0</td></tr>
+<tr class="memdesc:a8140c9b0b9af646ec6201cf9b782a727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el tipo de dispositivo.  <a href="classDispositivo.html#a8140c9b0b9af646ec6201cf9b782a727">Más...</a><br /></td></tr>
 <tr class="separator:a8140c9b0b9af646ec6201cf9b782a727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa964124532770815f37a8d5221f42cdf"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#aa964124532770815f37a8d5221f42cdf">getDetalle</a> () const</td></tr>
+<tr class="memdesc:aa964124532770815f37a8d5221f42cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Información propia de cada tipo de dispositivo (brillo, apertura, lectura...).  <a href="classDispositivo.html#aa964124532770815f37a8d5221f42cdf">Más...</a><br /></td></tr>
 <tr class="separator:aa964124532770815f37a8d5221f42cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89ac1526aca6caf819c332b32c3b63c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Estado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#aa89ac1526aca6caf819c332b32c3b63c">getEstado</a> () const</td></tr>
 <tr class="separator:aa89ac1526aca6caf819c332b32c3b63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13eb7d5418d43dce550746a12a1c3641"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#a13eb7d5418d43dce550746a12a1c3641">setEstado</a> (<a class="el" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Estado</a> e)</td></tr>
+<tr class="memdesc:a13eb7d5418d43dce550746a12a1c3641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cambia el estado directamente (se usa para simular fallos o restaurar desde la BD).  <a href="classDispositivo.html#a13eb7d5418d43dce550746a12a1c3641">Más...</a><br /></td></tr>
 <tr class="separator:a13eb7d5418d43dce550746a12a1c3641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef822b39538e62f54064f5bfc875fa42"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#aef822b39538e62f54064f5bfc875fa42">getNombre</a> () const</td></tr>
 <tr class="separator:aef822b39538e62f54064f5bfc875fa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,15 +130,22 @@ Métodos públicos</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Atributos protegidos</h2></td></tr>
 <tr class="memitem:a9ed6e1aa610907334a553ca041801494"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#a9ed6e1aa610907334a553ca041801494">id</a></td></tr>
+<tr class="memdesc:a9ed6e1aa610907334a553ca041801494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identificador del dispositivo.  <a href="classDispositivo.html#a9ed6e1aa610907334a553ca041801494">Más...</a><br /></td></tr>
 <tr class="separator:a9ed6e1aa610907334a553ca041801494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c8eba32c81ea7eb52076335d401e0e2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">nombre</a></td></tr>
+<tr class="memdesc:a6c8eba32c81ea7eb52076335d401e0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre que le asigna el usuario (ej. "Luz Sala").  <a href="classDispositivo.html#a6c8eba32c81ea7eb52076335d401e0e2">Más...</a><br /></td></tr>
 <tr class="separator:a6c8eba32c81ea7eb52076335d401e0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57501298695e1f5784df1255722e84da"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#a57501298695e1f5784df1255722e84da">potenciaWatts</a></td></tr>
+<tr class="memdesc:a57501298695e1f5784df1255722e84da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Potencia nominal en vatios (W), usada para estimar el consumo.  <a href="classDispositivo.html#a57501298695e1f5784df1255722e84da">Más...</a><br /></td></tr>
 <tr class="separator:a57501298695e1f5784df1255722e84da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e3fecd8ab39a8735b9f455231aef7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49">Estado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispositivo.html#a06e3fecd8ab39a8735b9f455231aef7d">estado</a></td></tr>
+<tr class="memdesc:a06e3fecd8ab39a8735b9f455231aef7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado actual del dispositivo.  <a href="classDispositivo.html#a06e3fecd8ab39a8735b9f455231aef7d">Más...</a><br /></td></tr>
 <tr class="separator:a06e3fecd8ab39a8735b9f455231aef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase base abstracta para todos los dispositivos del hogar. </p>
+<p>Define la interfaz común (encender, apagar, tipo y detalle) que cada dispositivo concreto (<a class="el" href="classLuz.html" title="Luz del hogar. Al encenderse recupera su último nivel de brillo.">Luz</a>, <a class="el" href="classPersiana.html" title="Persiana motorizada: &quot;encender&quot; la abre y &quot;apagar&quot; la cierra.">Persiana</a>, <a class="el" href="classSensor.html" title="Sensor que toma una lectura al activarse.">Sensor</a>) implementa a su manera. Gracias al polimorfismo, el <a class="el" href="classGestorDomotica.html" title="Guarda y administra todos los dispositivos del hogar.">GestorDomotica</a> y la interfaz gráfica pueden trabajar con cualquier dispositivo a través de un puntero a <a class="el" href="classDispositivo.html" title="Clase base abstracta para todos los dispositivos del hogar.">Dispositivo</a>. </p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="a365b30c0dc2a0c4373a40fdf2ffade22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a365b30c0dc2a0c4373a40fdf2ffade22">&#9670;&nbsp;</a></span>Dispositivo()</h2>
 
@@ -169,6 +186,16 @@ Atributos protegidos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Construye un dispositivo apagado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identificador del dispositivo. </td></tr>
+    <tr><td class="paramname">nombre</td><td>Nombre del dispositivo. </td></tr>
+    <tr><td class="paramname">potencia</td><td>Potencia nominal en vatios. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab8ac8f0267b52b1bcef708583173e5a1"></a>
@@ -193,6 +220,8 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Destructor virtual: garantiza que se destruya correctamente la clase derivada. </p>
 
 </div>
 </div>
@@ -219,6 +248,8 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Desactiva el dispositivo. También reinicia un dispositivo en fallo. </p>
 
 <p>Implementado en <a class="el" href="classSensor.html#ae4d5c72c1e82a9e6a926f18a9636a8dc">Sensor</a>, <a class="el" href="classPersiana.html#aeb83e94b400e012987dfc42d44ca9538">Persiana</a> y <a class="el" href="classLuz.html#a6698cbc4edb8f74487d14e83414dbdef">Luz</a>.</p>
 
@@ -247,6 +278,9 @@ Atributos protegidos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Activa el dispositivo. Cada tipo define qué significa "encender". </p>
+<dl class="section note"><dt>Nota</dt><dd>No tiene efecto si el dispositivo está en <a class="el" href="Dispositivo_8h.html#a9d4630b1e0c310d9b8c562abd8114c49af215802f06094cf00718ad119f279a6b" title="El dispositivo presenta una falla y no puede encenderse.">Estado::Fallo</a>. </dd></dl>
+
 <p>Implementado en <a class="el" href="classSensor.html#a7b1f441721e6ae31b57273df05d79205">Sensor</a>, <a class="el" href="classPersiana.html#ae1fc64d9e2e6f419b6454740d9bcf0e8">Persiana</a> y <a class="el" href="classLuz.html#a0cacc6b4c825e671adea0e025d8640e3">Luz</a>.</p>
 
 </div>
@@ -274,6 +308,9 @@ Atributos protegidos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Información propia de cada tipo de dispositivo (brillo, apertura, lectura...). </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Texto descriptivo para mostrar en la interfaz. </dd></dl>
+
 <p>Reimplementado en <a class="el" href="classSensor.html#a317f1a503150539c9a9971cd653e29dc">Sensor</a>, <a class="el" href="classPersiana.html#ae3d0849b0e9b432507aaf6ca36908d2b">Persiana</a> y <a class="el" href="classLuz.html#acfb6924ab3c576c9391a1135ec9e43c0">Luz</a>.</p>
 
 </div>
@@ -300,6 +337,7 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Devuelve</dt><dd>Estado actual del dispositivo. </dd></dl>
 
 </div>
 </div>
@@ -325,6 +363,7 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Devuelve</dt><dd>Identificador del dispositivo. </dd></dl>
 
 </div>
 </div>
@@ -350,6 +389,7 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Devuelve</dt><dd>Nombre del dispositivo. </dd></dl>
 
 </div>
 </div>
@@ -375,6 +415,7 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Devuelve</dt><dd>Potencia nominal en vatios. </dd></dl>
 
 </div>
 </div>
@@ -400,6 +441,9 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Devuelve el tipo de dispositivo. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>"Luz", "Persiana" o "Sensor". </dd></dl>
 
 <p>Implementado en <a class="el" href="classSensor.html#a53a1c6eb09f0c1f9fc3c052ddf1f8319">Sensor</a>, <a class="el" href="classPersiana.html#a4c813bdd6d292f3471d670058c4c3ff4">Persiana</a> y <a class="el" href="classLuz.html#ac69c03f937b0184f0e0a36182f5b8ea4">Luz</a>.</p>
 
@@ -429,6 +473,14 @@ Atributos protegidos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Cambia el estado directamente (se usa para simular fallos o restaurar desde la BD). </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Nuevo estado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Documentación de los datos miembro</h2>
@@ -452,6 +504,8 @@ Atributos protegidos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Estado actual del dispositivo. </p>
+
 </div>
 </div>
 <a id="a9ed6e1aa610907334a553ca041801494"></a>
@@ -473,6 +527,8 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Identificador del dispositivo. </p>
 
 </div>
 </div>
@@ -496,6 +552,8 @@ Atributos protegidos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Nombre que le asigna el usuario (ej. "Luz Sala"). </p>
+
 </div>
 </div>
 <a id="a57501298695e1f5784df1255722e84da"></a>
@@ -517,6 +575,8 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Potencia nominal en vatios (W), usada para estimar el consumo. </p>
 
 </div>
 </div>

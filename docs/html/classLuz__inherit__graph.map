@@ -1,4 +1,4 @@
 <map id="Luz" name="Luz">
-<area shape="rect" id="node1" title=" " alt="" coords="7,321,134,501"/>
-<area shape="rect" id="node2" href="$classDispositivo.html" title=" " alt="" coords="5,5,136,273"/>
+<area shape="rect" id="node1" title="Luz del hogar. Al encenderse recupera su último nivel de brillo." alt="" coords="7,321,134,501"/>
+<area shape="rect" id="node2" href="$classDispositivo.html" title="Clase base abstracta para todos los dispositivos del hogar." alt="" coords="5,5,136,273"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="Dispositivo" name="Dispositivo">
-<area shape="rect" id="node1" title=" " alt="" coords="153,5,283,273"/>
-<area shape="rect" id="node2" href="$classLuz.html" title=" " alt="" coords="5,321,132,501"/>
-<area shape="rect" id="node3" href="$classPersiana.html" title=" " alt="" coords="156,329,280,494"/>
-<area shape="rect" id="node4" href="$classSensor.html" title=" " alt="" coords="304,321,425,501"/>
+<area shape="rect" id="node1" title="Clase base abstracta para todos los dispositivos del hogar." alt="" coords="153,5,283,273"/>
+<area shape="rect" id="node2" href="$classLuz.html" title="Luz del hogar. Al encenderse recupera su último nivel de brillo." alt="" coords="5,321,132,501"/>
+<area shape="rect" id="node3" href="$classPersiana.html" title="Persiana motorizada: &quot;encender&quot; la abre y &quot;apagar&quot; la cierra." alt="" coords="156,329,280,494"/>
+<area shape="rect" id="node4" href="$classSensor.html" title="Sensor que toma una lectura al activarse." alt="" coords="304,321,425,501"/>
 </map>
